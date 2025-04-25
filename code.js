@@ -38,7 +38,8 @@ var ruleID=0;
 //stores what effect is going to happen so it can be diplayed 
 var effectToRemove;
 var effectToAdd;
-
+setProperty("ruleOption1", "options", ["OG","sour","green","grand","me","coke","cuke","banana","pmol","donut","vig","mouthWash","flu","gas","energy","oil","been","chili","battery","iodine","ad","horse"]);
+setProperty("ruleOption1", "options", ["OG","sour","green","grand","me","coke","cuke","banana","pmol","donut","vig","mouthWash","flu","gas","energy","oil","been","chili","battery","iodine","ad","horse"]);
 name = preset1Name;
 effect = preset1Effect;
 inporter(preset1Rules, true, false);
