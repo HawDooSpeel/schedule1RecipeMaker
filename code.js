@@ -62,7 +62,6 @@ onEvent("priceButton", "click", function( ) {
     console.log(sumValue);
   }
   price = startingPrice[(preset1Name.indexOf(recipe[0]))]*sumValue;
-  console.log(price);
   setText("priceView", "price estimate: "+price);
 });
 onEvent("itemSelect", "change", function( ) {
@@ -74,7 +73,6 @@ onEvent("exitButton", "click", function( ) {
 onEvent("saveButton", "click", function( ) {
   savedRecipes=recipe;
   //appendItem(savedNames, getText("recipeName"));
-  console.log(savedRecipes);
   recipe = [];
   activeEffects=[];
   allRefresh();
@@ -230,7 +228,6 @@ function inporter(inportedText, RuleInport, PresetInport) {
 //returns the converted text as a list
 function importFilter(importedText) {
    var filterdImport = [];
-   console.log(importedText);
   while ((importedText.includes(","))) {
     appendItem(filterdImport, importedText.substring(0, importedText.indexOf(",")));
     importedText = importedText.substring(importedText.indexOf(",")+1, importedText.length);
